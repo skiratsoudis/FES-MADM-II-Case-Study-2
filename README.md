@@ -1,77 +1,81 @@
-# FES-MADM-II — Case Study 2
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.186202190.svg)](https://doi.org/10.5281/zenodo.186202190)
 
-This repository provides the replication package and computational artifacts for **Case Study 2** of the  
+# FES-MADM II — Case Study 2 (Replication Package, v1.0.1)
+## Shock-aware supplier portfolio selection using open contracting data (UK Contracts Finder)
+
+This repository provides the **replication package and computational artifacts** for **Case Study 2** of the  
 **FES-MADM II (Fuzzy Entropy–Synergy Multi-Attribute Decision-Making)** framework.
 
-The case study corresponds to the article:
+It supports full **auditability** and **reproducibility** of the empirical analysis reported in the manuscript:
 
 **“Shock-aware supplier portfolio selection using open contracting data:  
 An auditable fuzzy entropy–synergy decision-analytics framework (FES-MADM II)”**
 
 ---
 
-## Scope of this repository
+## Zenodo archival record (recommended citation)
+This repository is archived on Zenodo (concept DOI): **10.5281/zenodo.186202190**  
+Use the DOI link: https://doi.org/10.5281/zenodo.186202190
 
-This repository is **not** the core FES-MADM II platform.  
-It documents a **fully reproducible application (Case Study 2)** and includes:
-
-- scenario-specific input datasets (S0–S4),
-- full computational outputs across all α-cut levels,
-- result tables and figures,
-- R scripts used for analysis and visualization.
-
-The methodological platform **FES-MADM II** is referenced separately and should be cited via its dedicated DOI.
+> Note: Zenodo also assigns version-specific DOIs. The concept DOI always resolves to the latest version.
 
 ---
 
-## Framework version
+## Scope and DOI separation (important)
+This repository is a **case-study-level replication package** (Case Study 2).  
+It **does not** represent the core FES-MADM II methodological platform.
 
-- **FES-MADM II v1.0.0**: baseline implementation.
-- **FES-MADM II v1.0.1**: upgraded version supporting **automatic computation across all α-cut levels**.
+- Cite the **platform DOI** for the general framework/methodology (archived separately).
+- Cite **this Zenodo DOI** for the *data, results, figures, and scripts* associated with Case Study 2.
 
-All results in this repository are produced using **v1.0.1**.
-
----
-
-## Repository structure
-code/ R scripts (model execution and figure generation)
-data/ Scenario input files (S0–S4)
-results/ Computational outputs and figures
-
+This separation prevents DOI duplication and ensures clear methodological provenance.
 
 ---
 
-## Scenarios
-
-The case study evaluates five platform-ready scenarios derived from UK Contracts Finder data:
-
-- **S0** — Baseline
-- **S1** — Inflation & market tightening
-- **S2** — Cyber procurement disruption
-- **S3** — Market consolidation
-- **S4** — Budget tightening
-
-Each scenario is evaluated over the full α-cut grid to assess robustness, discrimination, and auditability.
+## Repository contents
+- `data/` — Scenario-specific input datasets (S0–S4), platform-ready.
+- `results/` — Computational outputs across the complete α-cut grid, audit indices, tables, and figures.
+- `code/` — R implementation used to run FES-MADM II (v1.0.1) and generate outputs/plots.
 
 ---
 
-## Reproducibility
+## Scenarios (S0–S4)
+The case study evaluates five analytically distinct scenarios derived from UK Contracts Finder open procurement data:
 
-All results and figures reported in the associated manuscript can be reproduced using the material provided in this repository.
+- **S0** — Baseline  
+- **S1** — Inflation & market tightening  
+- **S2** — Cyber procurement disruption  
+- **S3** — Market consolidation  
+- **S4** — Budget tightening  
 
-1. Place the scenario input files in `data/`
-2. Execute the FES-MADM II R script located in `code/`
-3. Generated outputs will be written to `results/`
+Each scenario is evaluated over the **complete α-cut grid**, enabling comparative assessment of:
+ranking stability, criterion discrimination power, and information-supported rank separation.
+
+---
+
+## Framework versioning
+- **v1.0.0** — baseline implementation.
+- **v1.0.1** — upgraded implementation supporting **automatic computation across all α-cut levels**.
+
+All outputs provided in this repository correspond to **FES-MADM II v1.0.1**.
+
+---
+
+## Reproducibility (minimal workflow)
+1. Ensure the scenario input files are located in `data/`.
+2. Run the R script in `code/` (v1.0.1).
+3. Outputs (rankings, indices, figures) are written to `results/`.
+
+The results and figures in this repository correspond to those reported in the associated manuscript.
 
 ---
 
 ## License
-
-This repository is released under the **MIT License**.
+Released under the **MIT License**.
 
 ---
 
-## Citation
+## How to cite
+If you use this repository, please cite the Zenodo record:
 
-If you use this repository, please cite it as a **replication package for Case Study 2** of the FES-MADM II framework.  
-The Zenodo DOI will be linked upon archival.
+Kiratsoudis, S. (2026). *FES-MADM II — Case Study 2 (Replication Package, v1.0.1)*. Zenodo. https://doi.org/10.5281/zenodo.186202190
